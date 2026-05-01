@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import { AreaChart, Area, XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGrid, BarChart, Bar, Legend } from 'recharts'
 import { BrainCircuit, Waves, ShieldCheck, Sprout, Users, Radar, ArrowRight } from 'lucide-react'
+import { Analytics } from '@vercel/analytics/react'
 
 const rainfallData = [
   { month: 'Jan', rainfall: 62, average: 44 },
@@ -129,6 +130,7 @@ export default function App() {
       </main>
 
       <footer className="border-t border-white/10 py-8 text-center text-slate-400 text-sm">© 2026 Jala Chakra. Built for climate-resilient water governance.</footer>
+      <Analytics />
     </div>
   )
 }
